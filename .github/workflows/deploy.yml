@@ -23,13 +23,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: "latest"
+
+      - name: Build docs
+        run: |
+          chmod +x ./build-docs.sh
+          ./build-docs.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 重点：指定要上传的文件夹路径
           path: './pages'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,10 +1,19 @@
 [package]
-name = "next-c"
+name = "nextc"
+authors = ["Glacyend <Glacyend@outlook.com>"]
 version = "0.0.0"
 edition = "2024"
-authors = ["Glacyend <Glacyend@outlook.com>"]
 license = "Apache-2.0 OR MIT"
 description = "A system programming language inspired by C, offering modern syntax, stronger type safety, zero-cost abstractions, and full low-level control."
-keywords = ["nextc", "c", "system", "programming", "language", "modern", "safety", "low-level"]
+keywords = [
+    "nextc",
+    "c",
+    "system",
+    "programming",
+    "language",
+    "modern",
+    "safety",
+    "low-level",
+]
 
 [dependencies]

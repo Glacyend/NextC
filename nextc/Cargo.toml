@@ -15,5 +15,11 @@ keywords = [
     "safety",
     "low-level",
 ]
+build = "build.rs"
 
 [dependencies]
+current_platform = "0.2.0"
+indoc = "2.0.8"
+
+[build-dependencies]
+build-data = "0.3.3"

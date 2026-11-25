@@ -19,7 +19,7 @@ pub use current_platform::CURRENT_PLATFORM;
 /// The version number of NextC, in `MAJOR.MINOR.PATCH` format.
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");
 
-/// The release channel of NextCl, e.g. `stable`, `beta`, or `nightly`.
+/// The release channel of NextC, e.g. `stable`, `beta`, or `nightly`.
 pub const RELEASE_CHANNEL: &str = env!("RELEASE_CHANNEL");
 
 /// The full version string of NextC.

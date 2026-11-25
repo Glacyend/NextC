@@ -12,9 +12,7 @@
 //!
 //! - Glacyend <Glacyend@outlook.com>
 
-use crate::version::VersionInfo;
-
-mod version;
+use nextc::version::VersionInfo;
 
 fn main() {
     print!("{}", VersionInfo);
